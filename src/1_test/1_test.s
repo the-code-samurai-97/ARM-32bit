@@ -4,9 +4,9 @@ msg:    .asciz "Hello, World!\n"  @ The string to print
 .section .text
 .global _start
 
-_start:
+_start
     @ Load the address of the string into r1
-    ldr r1, =msg          @ r1 = address of the string
+    `   ldr r1, =msg          @ r1 = address of the string
 
     @ Set the length of the string in r2
     mov r2, #14           @ Length of "Hello, World!\n"
