@@ -71,3 +71,11 @@ Type "apropos word" to search for commands related to "word".
 ```bash
 (gdb) ni
 ```
+
+
+### info registers
+- Information about the current state of registers Memory , value
+
+```bash
+(gdb) info registers
+```

@@ -1,0 +1,1 @@
+arm-linux-gnueabihf-gcc 1_test.s -o 1_test -nostdlib -static && ./1_test

@@ -21,5 +21,7 @@ docker run --restart always -d --name arm32-dev-container --network host -it -v 
 docker exec -it arm32-dev-container bash
 ```
 
+
 ## Execute the code 
-RUN_ASSEMBLY.md
+src/RUN_ASSEMBLY.md
+
