@@ -13,3 +13,10 @@ repos:
         entry: ./scripts/format_arm_asm.sh
         language: system
         files: \.(s|S|asm)$
+  - repo: local
+    hooks:
+      - id: arm-asm-elf-file-deleter
+        name: ARM Assembly Binary file Deleter
+        entry: ./scripts/remove_elf_files.sh
+        language: system
+        type: [file]
