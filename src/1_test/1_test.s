@@ -5,6 +5,7 @@ msg:    .asciz "Hello, World!\n"  @ The string to print
 .global _start
 
 _start:
+
     @ Load the address of the string into r1
     ldr r1, =msg          @ r1 = address of the string
 
