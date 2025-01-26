@@ -21,7 +21,12 @@ docker run --restart always -d --name arm32-dev-container --network host -it -v 
 docker exec -it arm32-dev-container bash
 ```
 
-
+### Outside Docker for Development
+```bash
+brew install pre-commit
+brew install binutils
+pre-commit install
+```
 ## Execute the code 
 src/RUN_ASSEMBLY.md
 

@@ -3,6 +3,6 @@ repos:
     hooks:
       - id: asm-check
         name: Check Assembly Files
-        entry: bash -c 'for file in $(git diff --cached --name-only --diff-filter=ACMR | grep "\.asm\.s$"); do as --32 -o /dev/null "$file" || exit 1; done'
+        entry: bash -c 'for file in $(git diff --cached --name-only --diff-filter=ACMR | grep "\.s$"); do arm-none-eabi-as -o /dev/null "$file" || exit 1; done'
         language: system
-        files: \.asm\.s$
+        files: \.s$
