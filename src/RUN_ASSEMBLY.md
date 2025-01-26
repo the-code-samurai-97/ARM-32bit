@@ -30,7 +30,7 @@ qemu-arm -g 4242 ./asm
 - get the realpath of the compiled binary for gdb use
 
 ```bash
-realpth ./asm
+realpath ./asm
 ```
 
 ```bash
