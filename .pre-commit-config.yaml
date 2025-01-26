@@ -6,3 +6,10 @@ repos:
         entry: bash -c 'for file in $(git diff --cached --name-only --diff-filter=ACMR | grep "\.s$"); do arm-none-eabi-as -o /dev/null "$file" || exit 1; done'
         language: system
         files: \.s$
+  - repo: local
+    hooks:
+      - id: arm-asm-formatter
+        name: ARM Assembly Formatter
+        entry: ./scripts/format_arm_asm.sh
+        language: system
+        files: \.(s|S|asm)$
