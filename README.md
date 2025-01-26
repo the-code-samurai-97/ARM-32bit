@@ -23,8 +23,13 @@ docker exec -it arm32-dev-container bash
 
 ### Outside Docker for Development
 ```bash
+## Mac OS
 brew install pre-commit
-brew install binutils
+brew install arm-none-eabi-gcc
+
+## Ubuntu
+sudo apt install -y gcc-arm-none-eabi
+
 pre-commit install
 ```
 ## Execute the code 
