@@ -79,3 +79,7 @@ Type "apropos word" to search for commands related to "word".
 ```bash
 (gdb) info registers
 ```
+### References
+https://azeria-labs.com/writing-arm-assembly-part-1/
+
+
