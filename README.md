@@ -25,7 +25,7 @@ docker exec -it arm32-dev-container bash
 ```bash
 ## Mac OS
 brew install pre-commit
-brew install arm-none-eabi-gcc
+              brew install arm-none-eabi-gcc w
 
 ## Ubuntu
 sudo apt install -y gcc-arm-none-eabi
@@ -34,4 +34,4 @@ pre-commit install
 ```
 ## Execute the code 
 src/RUN_ASSEMBLY.md
-
+:ex 
